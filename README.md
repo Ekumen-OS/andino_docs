@@ -4,6 +4,10 @@ Manages andino ecosystem documentation.
 
 Visit the [website]() to see all th information.
 
+## Curiosities
+
+- If you want to add images, you can use the relative path directly. If you want to add videos, use always the `_static` directory, as there is where they are placed inside the `html` directory, even though you initially have it inside the `media` folder.
+
 ## Build documentation locally
 
 **NOTE**: Use a virtual environment if you don't want to keep these requirements in your machine.
@@ -46,3 +50,5 @@ Visit the [website]() to see all th information.
 Your ``index.rst`` has been built into ``index.html``
 in your documentation output directory (``_build/html/index.html``).
 Open this file in your web browser to see your docs.
+
+If you prefer, you can navigate to `docs/_build/html` and do `python3 -m http.server <port>` and you will be able to open the browser and see the docs at `localhost:<port>`.

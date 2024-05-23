@@ -17,17 +17,12 @@ With its open-source design, anyone can modify and customize the robot to suit t
 Note: For videos go to :ref:`Media <media>` section.
 
 Getting Started
---------------
+---------------
 
 .. toctree::
    :maxdepth: 1
 
-   md/bill_of_materials.md
-   md/connections_diagram.md
-   md/assembly_process.md
-   md/first_steps.md
-
-.. TODO All of this can be extracted from 'andino_hardware/README.md'
+   getting_started/index.rst
 
 Package Summary
 ---------------
@@ -35,18 +30,7 @@ Package Summary
 .. toctree::
    :maxdepth: 1
 
-   md/andino_bringup.md
-   md/andino_hardware.md
-   md/andino_description.md
-   md/andino_firmware.md
-   md/andino_base.md
-   md/andino_control.md
-   md/andino_gz_classic.md
-   md/andino_slam.md
-   md/andino_navigation.md
-   md/andino_apps.md
-
-.. TODO Find a way to move the README of the packages so they can be accesible from here
+   package_summary/index.rst
 
 Installation
 ------------
@@ -72,25 +56,25 @@ Media
 RVIZ Visualization
 ^^^^^^^^^^^^^^^^^^
 
-.. video:: ./media/andino_wheel_tf.mp4
+.. video:: ./_static/andino_wheel_tf.mp4
    :width: 640
    :height: 480
+
 
 Slam
 ^^^^
-.. TODO add the videos and compress them
 
 Using the robot for mapping.
 
-.. video:: ./media/
+.. video:: ./_static/andino_slam_office.mp4
    :width: 640
    :height: 480
 
-.. video:: ./media/
+.. video:: ./_static/slam_cam_house.mp4
    :width: 640
    :height: 480
 
-See :doc:`andino slam <md/andino_slam>` for more information.
+See `andino slam <https://github.com/Ekumen-OS/andino/tree/humble/andino_slam>`_ for more information.
 
 Related projects
 ----------------

@@ -1,5 +1,3 @@
-.. TODO Find a way to move the README of the packages so they can be accesible from here (with only the link it is not good)
-
 Package Summary
 ----------------
 
@@ -16,3 +14,4 @@ Package Summary
    andino_slam.md
    andino_navigation.md
    andino_apps.md
+   docker.md

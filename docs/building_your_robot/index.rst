@@ -1,7 +1,7 @@
 .. TODO All of this can be extracted from 'andino_hardware/README.md'
 
-Getting Started
----------------
+Building your Robot
+--------------------
 
 .. toctree::
    :maxdepth: 1

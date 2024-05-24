@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gazebo Classic simulation for the Andino robot &mdash; Andino Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="andino_slam" href="andino_slam.html" />
+    <link rel="prev" title="andino_control" href="andino_control.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Andino
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Package Summary</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="andino_bringup.html">andino_bringup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_hardware.html">andino_hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_description.html">andino_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_firmware.html">andino_firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_base.html">andino_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_control.html">andino_control</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Classic simulation for the Andino robot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#andino-simulation-with-gazebo-diff-drive-plugin">Andino simulation with Gazebo diff drive plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#andino-simulation-with-gazebo-ros2-control-plugin">Andino simulation with Gazebo ros2 control plugin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#considerations">Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#spawn-an-andino-robot">Spawn an Andino robot</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="andino_slam.html">andino_slam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_navigation.html">Andino Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_navigation.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_apps.html">Andino Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_apps.html#applications">Applications</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../md/installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../md/usage.html">Usage</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Andino</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Package Summary</a></li>
+      <li class="breadcrumb-item active">Gazebo Classic simulation for the Andino robot</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/package_summary/andino_gz_classic.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gazebo-classic-simulation-for-the-andino-robot">
+<h1>Gazebo Classic simulation for the Andino robot<a class="headerlink" href="#gazebo-classic-simulation-for-the-andino-robot" title="Link to this heading"></a></h1>
+<img src="docs/andino_gz_classic.png">
+<section id="build">
+<h2>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h2>
+<p>Install package dependencies:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosdep</span> <span class="n">install</span> <span class="o">--</span><span class="n">from</span><span class="o">-</span><span class="n">paths</span> <span class="n">src</span> <span class="o">-</span><span class="n">i</span> <span class="o">-</span><span class="n">y</span>
+</pre></div>
+</div>
+<p>Build the package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">colcon</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>Note: <code class="docutils literal notranslate"><span class="pre">--symlink-install</span></code> can be added if needed.</p>
+<p>Finally, source the install folder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span> <span class="n">install</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">bash</span>
+</pre></div>
+</div>
+<p>Note: <code class="docutils literal notranslate"><span class="pre">gazebo</span></code> might be needed to be sourced as well</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">gazebo</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">bash</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h1>
+<p>This package has the next option to be executed.</p>
+<section id="andino-simulation-with-gazebo-diff-drive-plugin">
+<h2>Andino simulation with Gazebo diff drive plugin<a class="headerlink" href="#andino-simulation-with-gazebo-diff-drive-plugin" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ros2</span> <span class="n">launch</span> <span class="n">andino_gz_classic</span> <span class="n">andino_one_robot</span><span class="o">.</span><span class="n">launch</span><span class="o">.</span><span class="n">py</span> <span class="n">initial_pose_x</span><span class="o">:=</span><span class="mf">3.0</span>
+</pre></div>
+</div>
+<p>This launch file supports the following launch arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">use_sim_time</span></code> . This parameter indicate to the rviz that it should work with simulation time. (default: ‘true’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rviz</span></code> . This parameter let to decide if you want to run rviz with this launch. False can be useful if you want to view the rviz in another computer. (default: ‘true’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">world</span></code> . SDF file of the world where andino will run. Note that the world should be available in gazebo paths.(default: ‘empty_world.world’)</p></li>
+</ul>
+<p>Finally, all the parameters of spawn an andino robot to put the robot in specific position are available. for more information of all the parameters of the child launch files you can write:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ros2</span> <span class="n">launch</span> <span class="n">andino_gz_classic</span> <span class="n">andino_one_robot</span><span class="o">.</span><span class="n">launch</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">s</span>
+</pre></div>
+</div>
+</section>
+<section id="andino-simulation-with-gazebo-ros2-control-plugin">
+<h2>Andino simulation with Gazebo ros2 control plugin<a class="headerlink" href="#andino-simulation-with-gazebo-ros2-control-plugin" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ros2</span> <span class="n">launch</span> <span class="n">andino_gz_classic</span> <span class="n">andino_one_robot</span><span class="o">.</span><span class="n">launch</span><span class="o">.</span><span class="n">py</span> <span class="n">use_gazebo_ros_control</span><span class="o">:=</span><span class="n">true</span>
+</pre></div>
+</div>
+<section id="considerations">
+<h3>Considerations<a class="headerlink" href="#considerations" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>note that the twist topic is <code class="docutils literal notranslate"><span class="pre">diff_controller/cmd_vel_unstamped</span></code>.</p></li>
+<li><p>The twist topic should be sent at a frequency of at least $10hz$ because the action has a validity timeout.</p></li>
+</ul>
+</section>
+</section>
+<section id="spawn-an-andino-robot">
+<h2>Spawn an Andino robot<a class="headerlink" href="#spawn-an-andino-robot" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ros2</span> <span class="n">launch</span> <span class="n">andino_gz_classic</span> <span class="n">spawn_robot</span><span class="o">.</span><span class="n">launch</span><span class="o">.</span><span class="n">py</span> <span class="n">initial_pose_x</span><span class="o">:=</span><span class="mf">3.0</span> <span class="n">entity</span><span class="o">:=</span><span class="n">andino</span> <span class="n">robot_description_topic</span><span class="o">:=/</span><span class="n">andino</span><span class="o">/</span><span class="n">robot_description</span>
+</pre></div>
+</div>
+<p>The parameters of this launch let to put the robot in any place of the simulation.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">use_sim_time</span></code>: Use simulation (Gazebo) clock if true. (default: ‘true’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">initial_pose_x</span></code>: Initial x pose of andino in the simulation. (default: ‘0.0’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">initial_pose_y</span></code>: Initial y pose of andino in the simulation. (default: ‘0.0’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">initial_pose_z</span></code>: Initial z pose of andino in the simulation. (default: ‘0.0’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">robot_description_topic</span></code>: robot description topic. (default: ‘/robot_description’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">initial_pose_yaw</span></code>: Initial yaw pose of andino in the simulation. (default: ‘0.0’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_gazebo_ros_control</span></code>: True to use the gazebo_ros_control plugin.  (default: ‘false’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">entity</span></code>: Name of the robot. (default: ‘andino’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rsp_frequency</span></code>: robot state publisher frequency. (default: ‘30.0’)</p></li>
+</ul>
+<p>Spawn multiple andino robots has some issues, so no namespace is created.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="andino_control.html" class="btn btn-neutral float-left" title="andino_control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="andino_slam.html" class="btn btn-neutral float-right" title="andino_slam" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ekumen.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>andino_base &mdash; Andino Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="andino_control" href="andino_control.html" />
+    <link rel="prev" title="andino_firmware" href="andino_firmware.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Andino
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Package Summary</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="andino_bringup.html">andino_bringup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_hardware.html">andino_hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_description.html">andino_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_firmware.html">andino_firmware</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">andino_base</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-interface">Hardware Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#state-interfaces">State interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#command-interfaces">Command interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#motor-driver-application">Motor Driver Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extra-notes">Extra Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="andino_control.html">andino_control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_gz_classic.html">Gazebo Classic simulation for the Andino robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_gz_classic.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_slam.html">andino_slam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_navigation.html">Andino Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_navigation.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_apps.html">Andino Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_apps.html#applications">Applications</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../md/installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../md/usage.html">Usage</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Andino</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Package Summary</a></li>
+      <li class="breadcrumb-item active">andino_base</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/package_summary/andino_base.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="andino-base">
+<h1>andino_base<a class="headerlink" href="#andino-base" title="Link to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>The hardware-software-ros interaction in the <code class="docutils literal notranslate"><span class="pre">andino</span></code> project is developed using <a class="reference external" href="https://control.ros.org/master/index.html">ROS 2 Control</a>.</p>
+<p>This package:</p>
+<ul class="simple">
+<li><p>Implements <code class="docutils literal notranslate"><span class="pre">andino</span></code>’s <a class="reference external" href="https://control.ros.org/master/doc/ros2_control/hardware_interface/doc/writing_new_hardware_interface.html">hardware interface</a>.</p></li>
+<li><p>Provides a communication with microcontroller:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">andino_base::MotorDriver</span></code> class is in charge of the Serial communication for commanding the motors.</p>
+<ul>
+<li><p>An application is provided for evaluating the communication: Check <code class="docutils literal notranslate"><span class="pre">applications/motor_driver_demo.cpp</span></code>. To use this application simply execute <code class="docutils literal notranslate"><span class="pre">motor_driver_demo</span> <span class="pre">--help</span></code> to see the options.</p></li>
+</ul>
+</li>
+<li><p>This communication module is used by the hardware interface implementation.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="hardware-interface">
+<h2>Hardware Interface<a class="headerlink" href="#hardware-interface" title="Link to this heading"></a></h2>
+<p>In <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> hardware system components are libraries, dynamically loaded by the controller manager using the pluginlib interface.</p>
+<p>For extra information about the hardware components see <a class="reference external" href="https://control.ros.org/master/doc/getting_started/getting_started.html#overview-hardware-components">Hardware Components</a>.</p>
+<p>The hardware interface accepts some parameters that are passed via the urdf description within the <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> tag (Check <a class="reference internal" href="#../andino_description/urdf/include/andino_control.urdf.xacro"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">andino_description</span></code></span></a>)</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Params</p></th>
+<th class="head text-center"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>left_wheel_name</p></td>
+<td class="text-center"><p>Name of the left wheel joint.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>right_wheel_name</p></td>
+<td class="text-center"><p>Name of the right wheel joint.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>serial_device</p></td>
+<td class="text-center"><p>Path to the serial device.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>baud_rate</p></td>
+<td class="text-center"><p>Baud rate of the serial communication.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>timeout</p></td>
+<td class="text-center"><p>Timeout for the communication.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>enc_ticks_per_rev</p></td>
+<td class="text-center"><p>Encoder ticks per revolution of the wheel.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="state-interfaces">
+<h3>State interfaces<a class="headerlink" href="#state-interfaces" title="Link to this heading"></a></h3>
+<p>This hardware interface implements the following state interfaces per joint (for left and right joint):</p>
+<ul class="simple">
+<li><p><em>Position</em>: The position is obtained via encoder information from the microcontroller.</p></li>
+<li><p><em>Velocity</em>: Velocity is calculated via encoder information from the microcontroller.</p></li>
+</ul>
+</section>
+<section id="command-interfaces">
+<h3>Command interfaces<a class="headerlink" href="#command-interfaces" title="Link to this heading"></a></h3>
+<p>This hardware interface uses the following command interfaces per joint (for left and right joint):</p>
+<ul class="simple">
+<li><p><em>Velocity</em>: The velocity received (rad/s) is traduced to microcontroller’s velocity nomenclature for the motors.</p></li>
+</ul>
+</section>
+</section>
+<section id="motor-driver-application">
+<h2>Motor Driver Application<a class="headerlink" href="#motor-driver-application" title="Link to this heading"></a></h2>
+<p>An application for testing the connection with the microcontroller is provided.
+After installing this package the application called <code class="docutils literal notranslate"><span class="pre">motor_driver_demo</span></code> can be used.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">motor_driver_demo</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+<p>This application allows verifying the communication with the microcontroller for controlling the motors. Commands for reading the encoders or individually setting a velocity for the motors is some of the possibilities.</p>
+</section>
+<section id="extra-notes">
+<h2>Extra Notes<a class="headerlink" href="#extra-notes" title="Link to this heading"></a></h2>
+<ul>
+<li><p>Serial communication: In case the serial port is denied to be open, probably the user should be added to the <code class="docutils literal notranslate"><span class="pre">plugdev</span></code> and <code class="docutils literal notranslate"><span class="pre">dialout</span></code> groups:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G dialout $USER
+sudo usermod -a -G plugdev $USER
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="andino_firmware.html" class="btn btn-neutral float-left" title="andino_firmware" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="andino_control.html" class="btn btn-neutral float-right" title="andino_control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ekumen.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

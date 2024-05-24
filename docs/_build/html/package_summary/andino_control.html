@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>andino_control &mdash; Andino Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Gazebo Classic simulation for the Andino robot" href="andino_gz_classic.html" />
+    <link rel="prev" title="andino_base" href="andino_base.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Andino
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Package Summary</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="andino_bringup.html">andino_bringup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_hardware.html">andino_hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_description.html">andino_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_firmware.html">andino_firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_base.html">andino_base</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">andino_control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hardware-interface">Hardware Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#controller-manager">Controller Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ros-2-controllers">ROS 2 Controllers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="andino_gz_classic.html">Gazebo Classic simulation for the Andino robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_gz_classic.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_slam.html">andino_slam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_navigation.html">Andino Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_navigation.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_apps.html">Andino Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andino_apps.html#applications">Applications</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../md/installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../md/usage.html">Usage</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Andino</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Package Summary</a></li>
+      <li class="breadcrumb-item active">andino_control</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/package_summary/andino_control.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="andino-control">
+<h1>andino_control<a class="headerlink" href="#andino-control" title="Link to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>ROS 2 Control is being used for controlling the robot and to interface with ROS framework.</p>
+<p>The following diagram describes several parts of the system that controls the robot via ROS 2 control tools.</p>
+<div class="highlight-mermaid notranslate"><div class="highlight"><pre><span></span>flowchart TD
+    %% COLORS %%
+    classDef blue fill:#2374f7,stroke:#000,stroke-width:2px,color:#fff
+    classDef red fill:#ed2633,stroke:#000,stroke-width:2px,color:#fff
+    classDef green fill:#16b522,stroke:#000,stroke-width:2px,color:#fff
+    classDef orange fill:#fc822b,stroke:#000,stroke-width:2px,color:#fff
+
+    %% DIAGRAM %%
+
+    A(Diff Drive Controller):::blue ---|encoder read/velocity interface| B(Hardware Interface):::green
+    C(Joint State Broadcaster):::blue ---|encoder read| B(Hardware Interface)
+
+    M(Controller Manager):::orange -..-&gt;|manages lifecycle| A
+    M(Controller Manager) -..-&gt; |manages lifecycle| C
+    M(Controller Manager) -..-&gt; |activates hw component| B
+
+    D[&quot;/cmd_vel&quot;] --&gt;|subs| A
+    A --&gt;|pubs| O[&quot;/odom&quot;]
+    A --&gt;|pubs| T[&quot;/tf&quot;]
+    C --&gt;|pubs| J[&quot;/joint_states&quot;]
+
+    linkStyle default stroke:red
+    linkStyle 0 stroke-width:4px,stroke:green
+    linkStyle 1 stroke-width:4px,stroke:green
+    linkStyle 5 stroke:blue
+</pre></div>
+</div>
+<section id="hardware-interface">
+<h3>Hardware Interface<a class="headerlink" href="#hardware-interface" title="Link to this heading"></a></h3>
+<p>The hardware interface component for this robot is implemented by <a class="reference internal" href="#../andino_base/"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">andino_base</span></code></span></a> package. It is in charge of providing the necessary state and command interfaces to be claimed by the controllers.</p>
+</section>
+<section id="controller-manager">
+<h3>Controller Manager<a class="headerlink" href="#controller-manager" title="Link to this heading"></a></h3>
+<p>The <a class="reference external" href="https://control.ros.org/humble/doc/ros2_control/controller_manager/doc/userdoc.html#controller-manager">Controller Manager</a> is in charge of managing the lifecycle of the controllers, access to the hardware interfaces and offers services to the ROS-world.</p>
+<p>The hardware interface to be activated when <code class="docutils literal notranslate"><span class="pre">controller_manager</span></code> node is activated is indicated via robot description passed via ROS 2 Parameter. A tag <code class="docutils literal notranslate"><span class="pre">&lt;ros2_control&gt;</span></code> is expected to be present in the robot description with the information of the hardware components to be activated as well as the state and command interfaces. See <a class="reference internal" href="#../andino_description/urdf/include/andino_control.urdf.xacro"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">andino_control.urdf.xacro</span></code></span></a>.</p>
+</section>
+<section id="ros-2-controllers">
+<h3>ROS 2 Controllers<a class="headerlink" href="#ros-2-controllers" title="Link to this heading"></a></h3>
+<p>Two controllers are being used from the available <a class="reference external" href="https://control.ros.org/humble/doc/ros2_controllers/doc/controllers_index.html">ros2_controllers</a>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://control.ros.org/humble/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html">diff_drive_controller</a>: <em>Controller for mobile robots with differential drive. Input for control are robot body velocity commands which are translated to wheel commands for the differential drive base. Odometry is computed from hardware feedback and published.</em></p>
+<ul>
+<li><p>Used state interfaces:</p>
+<ul>
+<li><p>left wheel velocity</p></li>
+<li><p>right wheel velocity</p></li>
+<li><p>left wheel position</p></li>
+<li><p>right wheel position</p></li>
+</ul>
+</li>
+<li><p>Used command interfaces</p>
+<ul>
+<li><p>left wheel velocity</p></li>
+<li><p>right wheel velocity</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://control.ros.org/humble/doc/ros2_controllers/joint_state_broadcaster/doc/userdoc.html">joint_state_broadcaster</a>: The broadcaster reads all state interfaces and reports them on <code class="docutils literal notranslate"><span class="pre">/joint_states</span></code> and <code class="docutils literal notranslate"><span class="pre">/dynamic_joint_states</span></code>.</p>
+<ul>
+<li><p>Used state interfaces:</p>
+<ul>
+<li><p>left wheel position</p></li>
+<li><p>right wheel position</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Each controller accepts ROS 2 parameters which they are provided via <a class="reference internal" href="#config/andino_controllers.yaml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">andino_controllers.yaml</span></code></span></a>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="andino_base.html" class="btn btn-neutral float-left" title="andino_base" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="andino_gz_classic.html" class="btn btn-neutral float-right" title="Gazebo Classic simulation for the Andino robot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ekumen.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

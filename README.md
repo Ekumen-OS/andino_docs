@@ -8,6 +8,15 @@ Visit the [website]() to see all th information.
 
 - If you want to add images, you can use the relative path directly. If you want to add videos, use always the `_static` directory, as there is where they are placed inside the `html` directory, even though you initially have it inside the `media` folder.
 
+## Get README.md
+
+A bash script named `get_readme.sh` is included in the repo to retrieve the latest version of the `README.md` of andino packages to include them in the documentation. You just need to execute the script, it will clone the repo, extract the files and remove the repo:
+
+```sh
+chmod +x get_readme.sh
+./get_readme.sh
+```
+
 ## Build documentation locally
 
 **NOTE**: Use a virtual environment if you don't want to keep these requirements in your machine.
@@ -46,6 +55,8 @@ Visit the [website]() to see all th information.
     ```sh
     make html
     ```
+
+### Visualize the documentation locally
 
 Your ``index.rst`` has been built into ``index.html``
 in your documentation output directory (``_build/html/index.html``).

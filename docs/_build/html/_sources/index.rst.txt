@@ -16,13 +16,13 @@ With its open-source design, anyone can modify and customize the robot to suit t
 
 Note: For videos go to :ref:`Media <media>` section.
 
-Getting Started
----------------
+Building your Robot
+--------------------
 
 .. toctree::
    :maxdepth: 1
 
-   getting_started/index.rst
+   building_your_robot/index.rst
 
 Package Summary
 ---------------
@@ -38,7 +38,7 @@ Installation
 .. toctree::
    :maxdepth: 1
 
-   md/installation.md
+   other_md/installation.md
 
 Usage
 -----
@@ -46,7 +46,15 @@ Usage
 .. toctree::
    :maxdepth: 1
 
-   md/usage.md
+   other_md/usage.md
+
+Demos
+------
+
+.. toctree::
+   :maxdepth: 1
+
+   demos/index.rst
 
 .. _media:
 
@@ -75,17 +83,6 @@ Using the robot for mapping.
    :height: 480
 
 See `andino slam <https://github.com/Ekumen-OS/andino/tree/humble/andino_slam>`_ for more information.
-
-Related projects
-----------------
-
-Other projects built upon Andino!
-
-- `andino_gz <https://github.com/Ekumen-OS/andino_gz>`_: `Gazebo <https://gazebosim.org/home>`_ (non-classic) simulation of the andino robot.
-- `andino_webots <https://github.com/Ekumen-OS/andino_webots>`_: `Webots <https://github.com/cyberbotics/webots>`_ simulation of the Andino robot fully integrated with ROS 2.
-- `andino_o3de <https://github.com/Ekumen-OS/andino_o3de>`_: `O3DE <https://o3de.org/>`_ simulation of the Andino robot.
-- `andino_isaac <https://github.com/Ekumen-OS/andino_isaac>`_: `Isaac Sim <https://docs.omniverse.nvidia.com/isaacsim/latest/index.html>`_ simulation of the Andino robot.
-- `andino_integration_tests <https://github.com/Ekumen-OS/andino_integration_tests>`_: Extension to the Andino robot showing how to build integration tests.
 
 Share your Andino!
 ------------------

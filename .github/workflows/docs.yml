@@ -56,31 +56,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install -U sphinx
-          python -m pip install sphinx-rtd-theme
-          # python -m pip install sphinxcontrib-apidoc
-          python -m pip install sphinx-autoapi
+          pip install -r docs/requirements.txt
 
-      - name: make the sphinx docs
+      - name: Build documentation
         run: |
-          make -C docs clean
-          # sphinx-apidoc -f -o docs/source . -H Test -e -t docs/source/_templates
-          make -C docs html
+          cd docs
+          make html
 
-      - name: Init new repo in dist folder and commit generated files
+      - name: Trigger Read the Docs build
+        env:
+          READTHEDOCS_TOKEN: ${{ secrets.READTHEDOCS_TOKEN }}
         run: |
-          cd docs/build/html/
-          git init
-          touch .nojekyll
-          git add -A
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m 'deploy'
-
-      - name: Force push to destination branch
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: rtd-pages
-          force: true
-          directory: ./docs/build/html
+          curl -X POST -d "branches=main" -H "Authorization: token $READTHEDOCS_TOKEN" https://readthedocs.org/api/v3/projects/andino-docs/versions/main/builds/

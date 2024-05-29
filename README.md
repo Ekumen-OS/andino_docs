@@ -7,6 +7,7 @@ Visit the [website]() to see all th information.
 ## Curiosities
 
 - If you want to add images, you can use the relative path directly. If you want to add videos, use always the `_static` directory, as there is where they are placed inside the `html` directory, even though you initially have it inside the `media` folder.
+- In this case, no Github Action is required for ReadTheDocs to work, we just need to setup the Webhook on the repository `Settings` to be able to build the documentation automatically every time a push is done or a pull request is merged.
 
 ## Get README.md
 

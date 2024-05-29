@@ -2,6 +2,8 @@
 Demos
 -----
 
+Note: Needs to be completed
+
 Other projects built upon Andino!
 
 - `andino_gz <https://github.com/Ekumen-OS/andino_gz>`_: `Gazebo <https://gazebosim.org/home>`_ (non-classic) simulation of the andino robot.

@@ -2,12 +2,12 @@
 
 Manages andino ecosystem documentation.
 
-Visit the [website]() to see all th information.
+Visit the [website](https://andino-documentation.readthedocs.io/en/latest/) to see all th information.
 
 ## Curiosities
 
 - If you want to add images, you can use the relative path directly. If you want to add videos, use always the `_static` directory, as there is where they are placed inside the `html` directory, even though you initially have it inside the `media` folder.
-- In this case, no Github Action is required for ReadTheDocs to work, we just need to setup the Webhook on the repository `Settings` to be able to build the documentation automatically every time a push is done or a pull request is merged.
+- In this case, no Github Action is required for ReadTheDocs to work, we just need to setup the Webhook on the repository `Settings` to be able to build the documentation automatically every time a push is done or a pull request is merged. This is configured automatically if you are admin on the repo group. If not, refer to [this link](https://docs.readthedocs.io/en/stable/guides/setup/git-repo-manual.html).
 
 ## Get README.md
 

@@ -1,4 +1,4 @@
-.. TODO All of this can be extracted from 'andino_hardware/README.md' and converted to .rst files
+.. TODO All of this can be extracted from 'andino_hardware/README.md' and converted to .rst files when the new assembly process is finished
 
 Building your Robot
 --------------------

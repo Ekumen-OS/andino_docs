@@ -1,7 +1,7 @@
 Package Summary
 ----------------
 
-.. TODO we need to migrate from the original repo all README files and convert them to .rst files, adding the references to this documentation in the README.md of the packages
+.. TODO we need to migrate from the original repo all README files and convert them to .rst files, adding the links to this documentation in the README.md of the packages, and migrating also all the media files
 
 .. toctree::
    :maxdepth: 1

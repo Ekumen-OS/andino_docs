@@ -38,7 +38,7 @@ Installation
 .. toctree::
    :maxdepth: 1
 
-   other_md/installation.md
+   other/installation.rst
 
 Usage
 -----
@@ -46,7 +46,7 @@ Usage
 .. toctree::
    :maxdepth: 1
 
-   other_md/usage.md
+   other/usage.rst
 
 Demos
 ------

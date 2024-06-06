@@ -43,5 +43,5 @@ html_title = "Andino Documentation"
 html_show_sphinx = False
 
 html_theme = 'sphinx_rtd_theme' # Default one is alabaster, you can change it installing other themes (e.g: furo)
-html_static_path = ['media']
+html_static_path = ['media', 'other/media']
 htmlhelp_basename = 'andino-docs'

@@ -1,6 +1,3 @@
-.. image:: ./media/logo_white.svg
-   :align: center
-
 .. image:: ./media/logo_black.svg
    :align: center
 

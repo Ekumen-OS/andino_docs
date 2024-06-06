@@ -28,27 +28,37 @@ colcon workspace
 
 Packages here provided are colcon packages. As such a colcon workspace is expected:
 
-1. Create colcon workspace::
+1. Create colcon workspace:
 
-   mkdir -p ~/ws/src
+   .. code-block:: bash
 
-2. Clone this repository in the ``src`` folder::
+      mkdir -p ~/ws/src
 
-   cd ~/ws/src
-   git clone https://github.com/Ekumen-OS/andino.git
+2. Clone this repository in the ``src`` folder:
 
-3. Install dependencies via ``rosdep``::
+   .. code-block:: bash
 
-   cd ~/ws
-   rosdep install --from-paths src --ignore-src -i -y
+      cd ~/ws/src
+      git clone https://github.com/Ekumen-OS/andino.git
 
-4. Build the packages::
+3. Install dependencies via ``rosdep``:
 
-   colcon build
+   .. code-block:: bash
+
+      cd ~/ws
+      rosdep install --from-paths src --ignore-src -i -y
+
+4. Build the packages:
+
+   .. code-block:: bash
+
+      colcon build
 
 5. Finally, source the built packages
-   If using ``bash``::
+   If using ``bash``:
 
-   source install/setup.bash
+   .. code-block:: bash
+
+      source install/setup.bash
 
    Note: Whether you are installing the packages in your dev machine or in your robot the procedure is the same.

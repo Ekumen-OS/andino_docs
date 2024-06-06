@@ -23,6 +23,7 @@ extensions = [
 
 templates_path = []
 
+# TODO when all the migration is done, only .rst files will be used as source files
 source_suffix = ['.rst', '.md']
 
 master_doc = 'index'
@@ -39,9 +40,15 @@ pygments_style = None
 # Title of the html page.
 html_title = "Andino Documentation"
 
+# Icon of the window.
+html_favicon = 'media/real_robot.png'
+
+# Logo of the page. Logo will be put on top of the sidebar.
+html_logo = 'media/logo_black.svg'
+
 # If true, “Created using Sphinx” is shown in the HTML footer. Default is True.
 html_show_sphinx = False
 
 html_theme = 'sphinx_rtd_theme' # Default one is alabaster, you can change it installing other themes (e.g: furo)
-html_static_path = ['media', 'other/media']
+html_static_path = ['media', 'other/media', 'package_summary/media', 'building_your_robot/media']
 htmlhelp_basename = 'andino-docs'

@@ -29,7 +29,7 @@ For example, by doing ``ros2 topic list`` the available topics can be displayed:
    /tf
    /tf_static
 
-   _Note: Showing just some of them_
+   *Note: Showing just some of them*
 
 Teleoperation
 -------------
@@ -38,7 +38,7 @@ Launch files for using the keyboard or a joystick for teleoperating the robot ar
 Keyboard
 ~~~~~~~~
 
-::
+.. code-block:: bash
 
    ros2 launch andino_bringup teleop_keyboard.launch.py
 
@@ -50,15 +50,17 @@ Joystick
 Using a joystick for teleoperating is notably better.
 You need the joystick configured as explained `here <andino_hardware.md#Using-joystick-for-teleoperation>`_.
 
-::
+.. code-block:: bash
 
    ros2 launch andino_bringup teleop_joystick.launch.py
 
 RViz
 ----
-Use::
+Use:
 
-   ros2 launch andino_bringup rviz.launch.py
+   .. code-block:: bash
+
+      ros2 launch andino_bringup rviz.launch.py
 
 For starting ``rviz2`` visualization with a provided configuration.
 

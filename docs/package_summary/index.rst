@@ -6,14 +6,14 @@ Package Summary
 .. toctree::
    :maxdepth: 1
 
-   andino_bringup.md
-   andino_hardware.md
-   andino_description.md
-   andino_firmware.md
-   andino_base.md
-   andino_control.md
-   andino_gz_classic.md
-   andino_slam.md
-   andino_navigation.md
-   andino_apps.md
-   docker.md
+   andino_bringup.rst
+   andino_hardware.rst
+   andino_description.rst
+   andino_firmware.rst
+   andino_base.rst
+   andino_control.rst
+   andino_gz_classic.rst
+   andino_slam.rst
+   andino_navigation.rst
+   andino_apps.rst
+   docker.rst

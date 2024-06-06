@@ -1,4 +1,4 @@
-.. TODO All of this can be extracted from 'andino_hardware/README.md'
+.. TODO All of this can be extracted from 'andino_hardware/README.md' and converted to .rst files
 
 Building your Robot
 --------------------

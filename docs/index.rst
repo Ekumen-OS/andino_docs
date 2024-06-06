@@ -99,9 +99,9 @@ This section is dedicated to recognizing and expressing gratitude to the open-so
 Contributing
 ------------
 
-Issues or PRs are always welcome! Please refer to `CONTRIBUTING <CONTRIBUTING.md>`_ doc.
+Issues or PRs are always welcome! Please refer to `CONTRIBUTING <https://github.com/Ekumen-OS/andino/blob/humble/CONTRIBUTING.md>`_ doc.
 
 Code development
 ----------------
 
-Note that a `Docker <https://github.com/Ekumen-OS/andino/tree/humble/docker>`_ folder is provided for easy setting up the workspace.
+Note that a :doc:`docker <package_summary/docker>` page is provided for easy setting up the workspace.

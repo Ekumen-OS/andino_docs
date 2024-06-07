@@ -61,4 +61,4 @@ Packages here provided are colcon packages. As such a colcon workspace is expect
 
       source install/setup.bash
 
-   Note: Whether you are installing the packages in your dev machine or in your robot the procedure is the same.
+   *Note: Whether you are installing the packages in your dev machine or in your robot the procedure is the same.*

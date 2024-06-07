@@ -1,8 +1,6 @@
 Usage
 =====
 
-.. TODO find the way to fix these references, or change it to include others
-
 Robot bringup
 -------------
 ``andino_bringup`` contains launch files that concentrate the process that brings up the robot.
@@ -46,6 +44,7 @@ This is similar to just executing ``ros2 run teleop_twist_keyboard teleop_twist_
 
 Joystick
 ~~~~~~~~
+.. TODO find the way to fix these references, or change it to include other thing
 
 Using a joystick for teleoperating is notably better.
 You need the joystick configured as explained `here <andino_hardware.md#Using-joystick-for-teleoperation>`_.
@@ -66,17 +65,14 @@ For starting ``rviz2`` visualization with a provided configuration.
 
 Navigation
 ----------
-The `andino_navigation <./andino_navigation.md>`_ package provides a navigation stack based on the great `Nav2 <https://github.com/ros-planning/navigation2>`_ package.
+The  `andino_navigation package <https://github.com/Ekumen-OS/andino/tree/humble/andino_navigation>`_ provides a navigation stack based on the great `Nav2 <https://github.com/ros-planning/navigation2>`_ package.
 
 .. video:: ../_static/andino_nav2.mp4
    :width: 640
    :height: 480
 
-Follow the `andino_navigation's README <./andino_navigation.md>`_ instructions for bringing up the Navigation stack in the real robot or in the simulation.
+Follow the :doc:`andino_navigation <package_summary/andino_navigation>` instructions for bringing up the Navigation stack in the real robot or in the simulation.
 
 Simulation
 ----------
-The `andino_gz_classic <./andino_gz_classic.md>`_ package provides a Gazebo simulation for the Andino robot.
-
-.. image:: ./andino_gz_classic/docs/andino_gz_classic.png
-   :width: 400
+The `andino_gz_classic package <https://github.com/Ekumen-OS/andino/tree/humble/andino_gz_classic>`_ provides a Gazebo simulation for the Andino robot.

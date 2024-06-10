@@ -27,17 +27,9 @@ chmod +x get_readme.sh
     ```sh
     sudo apt install python3-pip
     ```
-- Install ``sphinx``
+- Install ``dependencies``
     ```sh
-    pip install sphinx
-    ```
-- Install ``myst-parser``
-    ```sh
-    pip install myst-parser
-    ```
-    - Install ``sphinx_rtd_theme``
-    ```sh
-    pip install sphinx_rtd_theme
+    pip install -r docs/requirements.txt
     ```
 - Add the /.local/bin path to bash-profile (this allow execution of sphinx-build)
     - Open bash profile with any editor

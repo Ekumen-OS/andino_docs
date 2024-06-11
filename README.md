@@ -2,7 +2,7 @@
 
 Manages andino ecosystem documentation.
 
-Visit the [website](https://andino-documentation.readthedocs.io/en/latest/) to see all th information.
+Visit the [website](https://andino.readthedocs.io/en/latest/) to see all th information.
 
 ## Curiosities
 

@@ -67,11 +67,11 @@ Navigation
 ----------
 The  `andino_navigation package <https://github.com/Ekumen-OS/andino/tree/humble/andino_navigation>`_ provides a navigation stack based on the great `Nav2 <https://github.com/ros-planning/navigation2>`_ package.
 
-.. video:: ../_static/andino_nav2.mp4
+.. video:: ./media/andino_nav2.mp4
    :width: 640
    :height: 480
 
-Follow the :doc:`andino_navigation <package_summary/andino_navigation>` instructions for bringing up the Navigation stack in the real robot or in the simulation.
+Follow the :doc:`andino_navigation <../package_summary/andino_navigation>` instructions for bringing up the Navigation stack in the real robot or in the simulation.
 
 Simulation
 ----------

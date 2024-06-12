@@ -6,7 +6,7 @@ Visit the [website](https://andino.readthedocs.io/en/latest/) to see all th info
 
 ## Curiosities
 
-- If you want to add images, you can use the relative path directly. If you want to add videos, use always the `_static` directory, as there is where they are placed inside the `html` directory, even though you initially have it inside the `media` folder.
+- If you want to add images, you can use the relative path directly. If you want to add videos, it's a bit more tricky, since videos won't work both locally and on ReadTheDocs. For them to work on ReadTheDocs (recommended), you should use the relative path, same as with the images. For them to work locally, you have to specify the `_static` path.
 - In this case, no Github Action is required for ReadTheDocs to work, we just need to setup the Webhook on the repository `Settings` to be able to build the documentation automatically every time a push is done or a pull request is merged. This is configured automatically if you are admin on the repo group. If not, refer to [this link](https://docs.readthedocs.io/en/stable/guides/setup/git-repo-manual.html).
 
 ## Get README.md

@@ -61,7 +61,7 @@ Media
 RVIZ Visualization
 ^^^^^^^^^^^^^^^^^^
 
-.. video:: ./_static/andino_wheel_tf.mp4
+.. video:: ./media/andino_wheel_tf.mp4
    :width: 640
    :height: 480
 
@@ -71,11 +71,11 @@ Slam
 
 Using the robot for mapping.
 
-.. video:: ./_static/andino_slam_office.mp4
+.. video:: ./media/andino_slam_office.mp4
    :width: 640
    :height: 480
 
-.. video:: ./_static/slam_cam_house.mp4
+.. video:: ./media/slam_cam_house.mp4
    :width: 640
    :height: 480
 

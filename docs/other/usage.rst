@@ -45,7 +45,7 @@ This is similar to just executing ``ros2 run teleop_twist_keyboard teleop_twist_
 Joystick
 ~~~~~~~~
 
-`andino_bringup package <https://github.com/Ekumen-OS/andino/tree/humble/andino_bringup>` provides a launch file for launching the corresponding ``ROS 2`` nodes for teleoperating the robot using a joystick.
+`andino_bringup package <https://github.com/Ekumen-OS/andino/tree/humble/andino_bringup>`_ provides a launch file for launching the corresponding ``ROS 2`` nodes for teleoperating the robot using a joystick.
 
 It is worth mentioning that a set up might be needed depending on the gamepad you are using. Here some general guidelines:
 

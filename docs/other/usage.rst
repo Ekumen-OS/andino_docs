@@ -44,10 +44,32 @@ This is similar to just executing ``ros2 run teleop_twist_keyboard teleop_twist_
 
 Joystick
 ~~~~~~~~
-.. TODO find the way to fix these references, or change it to include other thing
 
-Using a joystick for teleoperating is notably better.
-You need the joystick configured as explained `here <andino_hardware.md#Using-joystick-for-teleoperation>`_.
+`andino_bringup package <https://github.com/Ekumen-OS/andino/tree/humble/andino_bringup>` provides a launch file for launching the corresponding ``ROS 2`` nodes for teleoperating the robot using a joystick.
+
+It is worth mentioning that a set up might be needed depending on the gamepad you are using. Here some general guidelines:
+
+- In case you are using a *Xbox One Controller* and you want use it wireless (via USB Wireless Dongle) installing `Xone <https://github.com/medusalix/xone>`_ is recommended.
+- Verify that your joystick is actually working on Ubuntu:
+  - Some tools that might be useful:
+
+      .. code-block:: bash
+
+         sudo apt install joystick jstest-gtk evtest
+
+  - Run ``evtest`` to check if your pad is connected:
+
+      .. code-block:: bash
+
+         $ evtest
+         No device specified, trying to scan all of /dev/input/event*
+         Not running as root, no devices may be available.
+         Available devices:
+            /dev/input/event22:    Microsoft X-Box One pad
+
+  - Alternatively, you can use ``jstest-gtk`` to check the controller, you will find a pretty GUI to play with.
+
+Finally, launch the teleoperation:
 
 .. code-block:: bash
 

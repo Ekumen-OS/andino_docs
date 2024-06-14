@@ -54,15 +54,19 @@ ROS 2 Controllers
 Two controllers are being used from the available `ros2_controllers <https://control.ros.org/humble/doc/ros2_controllers/doc/controllers_index.html>`_:
 
 - `diff_drive_controller <https://control.ros.org/humble/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html>`_: *Controller for mobile robots with differential drive. Input for control are robot body velocity commands which are translated to wheel commands for the differential drive base. Odometry is computed from hardware feedback and published.*
+
   - Used state interfaces:
     - left wheel velocity
     - right wheel velocity
     - left wheel position
     - right wheel position
+
   - Used command interfaces:
     - left wheel velocity
     - right wheel velocity
+
 - `joint_state_broadcaster <https://control.ros.org/humble/doc/ros2_controllers/joint_state_broadcaster/doc/userdoc.html>`_: The broadcaster reads all state interfaces and reports them on ``/joint_states`` and ``/dynamic_joint_states``.
+
   - Used state interfaces:
     - left wheel position
     - right wheel position

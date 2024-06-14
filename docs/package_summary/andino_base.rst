@@ -9,8 +9,10 @@ The hardware-software-ros interaction in the `andino` project is developed using
 This package:
   - Implements andino's hardware interface.
   - Provides a communication with microcontroller:
+
     - ``andino_base::MotorDriver`` class is in charge of the Serial communication for commanding the motors.
       - An application is provided for evaluating the communication: Check ``applications/motor_driver_demo.cpp``. To use this application simply execute ``motor_driver_demo --help`` to see the options.
+
     - This communication module is used by the hardware interface implementation.
 
 Hardware Interface

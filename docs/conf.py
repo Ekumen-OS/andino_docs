@@ -15,7 +15,6 @@ release = '1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'myst_parser',
     'sphinx_tabs.tabs',
     'sphinxcontrib.video',
     'sphinx_rtd_theme'
@@ -24,7 +23,7 @@ extensions = [
 templates_path = []
 
 # TODO when all the migration is done, only .rst files will be used as source files
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 
 master_doc = 'index'
 
